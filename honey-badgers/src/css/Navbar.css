@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;400&family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+nav{
+    position: relative;
+}
+.navbar{
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s linear;
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    background-image:url("../images/black-bg.jpg");
+    background-size:cover;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    z-index: 40;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+}
+.hidden{
+    height: 4rem;
+    width: 100%;
+    z-index: 40;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+    position: fixed;
+    top: -80px;
+    transition: 0.3s linear;
+
+}
+
+.logo {
+  width: auto; /* Adjust the width as needed */
+  height: 45px; /* Allow the height to adjust proportionally */
+  margin-right:-20px;
+}
+
+.logo-img {
+  -webkit-mask-image: url(../images/HBicon.png);
+  mask-image: url(../images/HBicon.png);
+  width: 100%; 
+  height: 100%; 
+  -webkit-mask-size:contain; 
+  mask-size: contain; 
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+
+.navbar .company-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:2vw;
+
+}
+.company-name .company {
+    background:url(../images/goldenbg2.jpg);
+    background-size:cover;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    letter-spacing: 0.05vw;
+    font-weight:bolder;
+    padding: 1vw 1vw 1vw 0vw;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.4rem;
+}
+
+.navbar .head:hover,.navbar .head:hover.head {
+    background-color: rgba(143, 145, 128, 0.6) !important;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    text-decoration: underline !important;
+}
+
+.navbar .head{
+    padding: .5vw .5vw .5vw .5vw;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1rem;
+    background:url("../images/goldenbg2.jpg");
+    background-size:cover;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-right: 1vw;
+    font-weight:bold;
+
+}
+.nav-head{
+    margin-right:2vw;
+}
+.menu{
+    display:none;
+    color:#E0AF2F;
+    cursor:pointer;
+}
+
+
+@media(max-width:640px){
+    .nav-head{
+        display:none;
+    }
+    .menu{
+        display:block;
+        margin-right:2vw;
+    }
+    .menu:hover{
+        cursor:pointer;
+    
+    
+        }
+        .menu .menu-btn {
+            background:transparent;
+            border:none;
+
+        }
+    .logo {
+        width: auto;
+        height: 23px;
+        padding-right: 8px;
+    }
+    .company-name .company {
+    background:url(../images/goldenbg2.jpg);
+    background-size:cover;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    letter-spacing: 0.05vw;
+    font-weight:bolder;
+    padding: 1vw 1vw 1vw 0vw;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+}
